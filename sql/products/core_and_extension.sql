@@ -38,3 +38,8 @@ SELECT * FROM films WHERE genre = 'SciFi' OR genre = 'Western';
 SELECT * FROM films WHERE genre != 'SciFi';
 SELECT * FROM films WHERE genre = 'Western' AND release_year < 2000;
 SELECT * FROM films WHERE title LIKE '%Matrix%';
+
+SELECT COUNT(id) FROM films;
+SELECT AVG(score) FROM films;
+SELECT AVG(score) FROM films GROUP BY genre;
+
