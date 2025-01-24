@@ -55,3 +55,8 @@ FROM films
 JOIN directors
 ON films.director_id = directors.id;
 
+SELECT directors.name, COUNT(directors.name)
+FROM films
+JOIN directors
+ON films.director_id = directors.id GROUP BY directors.name;
+
