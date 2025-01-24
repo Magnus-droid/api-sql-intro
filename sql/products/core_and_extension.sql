@@ -43,3 +43,15 @@ SELECT COUNT(id) FROM films;
 SELECT AVG(score) FROM films;
 SELECT AVG(score) FROM films GROUP BY genre;
 
+INSERT INTO directors (name)
+VALUES
+    ('Director 1'),
+    ('Director 2'),
+    ('Director 3'),
+    ('Director 4');
+
+SELECT *
+FROM films
+JOIN directors
+ON films.director_id = directors.id;
+
